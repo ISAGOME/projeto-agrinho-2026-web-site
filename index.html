@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro - Agricultura Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">Eco<span>Agro</span></div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#praticas">Práticas</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobileMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Cultivando o Futuro com Sustentabilidade</h1>
+            <p>Descubra como a agricultura sustentável protege o meio ambiente, apoia comunidades e garante alimentos saudáveis para as próximas gerações.</p>
+            <a href="#praticas" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="praticas" class="praticas container">
+        <h2>Pilares da Agricultura Sustentável</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Rotação de Culturas</h3>
+                <p>Alternar as espécies plantadas na mesma área ajuda a manter os nutrientes do solo e reduz a proliferação de pragas de forma natural.</p>
+            </div>
+            <div class="card">
+                <h3>Gestão de Água</h3>
+                <p>Uso de técnicas como a irrigação por gotejamento e a captação de água da chuva para evitar o desperdício desse recurso vital.</p>
+            </div>
+            <div class="card">
+                <h3>Adubação Orgânica</h3>
+                <p>Substituição de fertilizantes químicos por compostagem e biofertilizantes, preservando a microfauna do solo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulador-section">
+        <div class="container text-center">
+            <h2>Simulador de Impacto Ambiental</h2>
+            <p>Selecione uma prática e veja a estimativa de redução de impacto ambiental na produção agrícola:</p>
+            
+            <div class="simulador-box">
+                <select id="praticaSelect">
+                    <option value="none">Selecione uma prática...</option>
+                    <option value="rotacao">Rotação de Culturas</option>
+                    <option value="gotejamento">Irrigação por Gotejamento</option>
+                    <option value="organico">Uso de Adubo Orgânico</option>
+                </select>
+                <button onclick="calcularImpacto()" class="btn-calc">Calcular Impacto</button>
+                
+                <div id="resultado" class="resultado-box">
+                    Selecione uma opção acima para ver os dados.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2026 EcoAgro. Desenvolvido para um futuro mais verde.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
